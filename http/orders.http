@@ -1,0 +1,5 @@
+### Order detail
+GET http://localhost:8080/api/orders/1
+
+### Unknown order (expect 404)
+GET http://localhost:8080/api/orders/999999
