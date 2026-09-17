@@ -1,0 +1,12 @@
+# Activate with the "sqllog" profile to see every SQL statement and per-request JDBC statistics.
+spring:
+  jpa:
+    properties:
+      hibernate:
+        format_sql: true
+        generate_statistics: true
+
+logging:
+  level:
+    org.hibernate.SQL: debug
+    org.hibernate.engine.internal.StatisticalLoggingSessionEventListener: info
