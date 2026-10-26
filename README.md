@@ -62,6 +62,7 @@ mvn test
 | Method | Path | Description |
 | --- | --- | --- |
 | GET | `/api/orders/{orderId}` | Order with line items and total |
+| GET | `/api/customers/{customerId}/orders` | Customer order history, newest first |
 
 ## License
 
