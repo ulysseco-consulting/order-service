@@ -3,3 +3,9 @@ GET http://localhost:8080/api/orders/1
 
 ### Unknown order (expect 404)
 GET http://localhost:8080/api/orders/999999
+
+### Order history for the high-volume customer
+GET http://localhost:8080/api/customers/1/orders
+
+### Order history for a typical customer
+GET http://localhost:8080/api/customers/42/orders
